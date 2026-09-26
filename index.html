@@ -1465,7 +1465,7 @@
     }
     .hero-meta-item .meta-label { display:block; color:#718198; font-size:9px; text-transform:uppercase; letter-spacing:.09em; margin-bottom:4px; }
     .hero-meta-item strong { display:block; color:#dbe5f4; font-size:11px; line-height:1.25; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-    .hero-meta-item.salary { border-color:rgba(101,162,255,.28); background:rgba(79,140,255,.08); }
+    .hero-meta-item.salary { margin-top:0; font-size:inherit; border-color:rgba(101,162,255,.28); background:rgba(79,140,255,.08); }
 
     .achievement-project-slide { max-width:1180px; }
     .achievement-project-slide > h2 { margin-bottom: 28px; }
@@ -1806,10 +1806,18 @@
           </h2>
 
           <p class="lead">
-            Отзывы коллег из текущей команды <strong style="color:#e5edf8;">Naumen</strong>
+            Отзывы и благодарности от коллег
           </p>
 
           <div class="feedback-grid">
+            <article class="glass feedback-card">
+              <div class="feedback-person">
+                <strong>Анастасия</strong>
+                <span>тестировщик</span>
+              </div>
+              <p>«Благодарна Сергею за написание подробных постановок и оперативную помощь в случае возникновения непонятных кейсов.»</p>
+            </article>
+
             <article class="glass feedback-card">
               <div class="feedback-person">
                 <strong>Алексей</strong>
@@ -1840,14 +1848,6 @@
                 <span>лид команды тестирования</span>
               </div>
               <p>«Благодарность Сереже за то, что тестирует свои задачи, всегда оставляет подробные комментарии и кейсы, оперативно отвечает на вопросы».</p>
-            </article>
-
-            <article class="glass feedback-card">
-              <div class="feedback-person">
-                <strong>Анастасия</strong>
-                <span>тестировщик</span>
-              </div>
-              <p>«Благодарна Сергею за написание подробных постановок и оперативную помощь в случае возникновения непонятных кейсов.»</p>
             </article>
           </div>
         </div>
@@ -2011,12 +2011,12 @@
         s2: { aria:"Опыт", eyebrow:"02 · Опыт", title:"Опыт:", lead:"3+ года работы с enterprise-продуктом и сложными задачами системного анализа", company:"Enterprise Service Desk", productTitle:"Продукт класса Service Desk", product:"Проектирование и развитие функциональных модулей", a1:"Проектирование интеграций в масштабном enterprise-продукте", a2:"Проектирование ролевых моделей доступа в мультиорганизационной среде", a3:"Перевод размытых бизнес-идей в структурированные требования, сценарии и схемы" },
         s3: { aria:"Ключевые навыки", eyebrow:"03 · Ключевые навыки", title:"Ключевые навыки и инструменты", lead:"Инструменты, которые помогают пройти путь от бизнес-задачи до решения, понятного команде разработки", system:"Системный анализ", data:"Работа с данными", product:"Продуктовый анализ", cert:"Сертифицированный Product Owner · ScrumTrek" },
         s4: { aria:"Достижения и Pet Project", eyebrow:"04 · Достижения и проект", title:"Достижения", petTitle:"Pet Project · «Oui, chef!»", petSubtitle:"От продуктовой идеи до работающего MVP", petDescription:"Самостоятельный MVP мобильного AI-помощника для подбора рецептов. Провёл продуктовую аналитику и участвовал в создании решения с использованием AI-инструментов." },
-        s5: { aria:"Фидбек от коллег", eyebrow:"05 · Фидбек от коллег", title:"Фидбек от", titleGradient:"коллег", lead:"Отзывы коллег из текущей команды Naumen", feedback:[
+        s5: { aria:"Фидбек от коллег", eyebrow:"05 · Фидбек от коллег", title:"Фидбек от", titleGradient:"коллег", lead:"Отзывы и благодарности от коллег", feedback:[
+          ["Анастасия","тестировщик","Благодарна за подробные постановки и оперативную помощь в случае возникновения непонятных кейсов."],
           ["Алексей","разработчик","Постановки Сергея — качественные и продуманные до мелочей, с полным описанием объектной модели и FlowChart-диаграммами."],
           ["Олег","разработчик","Благодарность за оперативное и качественное решение задач, что помогает в соблюдении сроков."],
           ["Лев","системный архитектор","За желание и умение глубоко погружаться во все аспекты полученных на проработку кейсов."],
-          ["Мария","лид команды тестирования","Спасибо за самостоятельное тестирование задач, подробные комментарии и оперативные ответы на вопросы."],
-          ["Анастасия","тестировщик","Благодарна за подробные постановки и оперативную помощь в случае возникновения непонятных кейсов."]
+          ["Мария","лид команды тестирования","Спасибо за самостоятельное тестирование задач, подробные комментарии и оперативные ответы на вопросы."]
         ] },
         s6: { aria:"NEXT STEP", eyebrow:"06 · NEXT STEP", title:"Готов к новым", titleGradient:"вызовам", lead:"Ищу классную продуктовую команду, в которой пригодится мой «микс» из системного анализа и продуктового мышления. Буду рад вместе с вами работать над продуктом, генерировать идеи и видеть, как фичи делают жизнь пользователей лучше.", role:"Middle Product / System Analyst", remote:"Удалёнка / Гибрид", teams:"Продуктовые команды", salary:"Зарплатные ожидания:", salaryValue:"от 200 000 ₽ на руки", telegram:"Написать в Telegram", portfolio:"Посмотреть онлайн-портфолио" }
       },
@@ -2035,12 +2035,12 @@
         s2: { aria:"Experience", eyebrow:"02 · Experience", title:"Experience:", lead:"3+ years working with an enterprise product and complex system analysis challenges", company:"Enterprise Service Desk", productTitle:"Service Desk product", product:"Design and development of functional modules", a1:"Designed integrations for a large-scale enterprise product", a2:"Designed role-based access models for a multi-organizational environment", a3:"Turned ambiguous business ideas into structured requirements, scenarios and diagrams" },
         s3: { aria:"Key skills", eyebrow:"03 · Key Skills", title:"Key Skills & Tools", lead:"A toolkit that helps me move from a business problem to a solution the development team can clearly understand", system:"System Analysis", data:"Data & Analytics", product:"Product Analysis", cert:"Certified Product Owner · ScrumTrek" },
         s4: { aria:"Achievements and Pet Project", eyebrow:"04 · Achievements & Project", title:"Achievements", petTitle:"Pet Project · «Oui, chef!»", petSubtitle:"From product idea to working MVP", petDescription:"A self-developed MVP of an AI-powered mobile recipe assistant. Conducted product analysis and participated in building the solution using AI tools." },
-        s5: { aria:"Colleagues' Feedback", eyebrow:"05 · Colleagues' Feedback", title:"Feedback from", titleGradient:"colleagues", lead:"Feedback from colleagues in my current Naumen team", feedback:[
+        s5: { aria:"Colleagues' Feedback", eyebrow:"05 · Colleagues' Feedback", title:"Feedback from", titleGradient:"colleagues", lead:"Feedback and appreciation from colleagues", feedback:[
+          ["Anastasia","QA Engineer","Grateful for detailed specifications and prompt help whenever unclear cases arise."],
           ["Alexey","Developer","Sergey’s specifications are high-quality and thought through down to the smallest detail, with a complete object model and FlowChart diagrams."],
           ["Oleg","Developer","Thank you to Sergey for solving tasks quickly and with high quality, helping the team meet deadlines."],
           ["Lev","System Architect","For the willingness and ability to dive deeply into every aspect of the cases assigned for analysis."],
-          ["Maria","Test Team Lead","Thanks for testing tasks independently, leaving detailed comments and responding to questions promptly."],
-          ["Anastasia","QA Engineer","Grateful for detailed specifications and prompt help whenever unclear cases arise."]
+          ["Maria","Test Team Lead","Thanks for testing tasks independently, leaving detailed comments and responding to questions promptly."]
         ] },
         s6: { aria:"Next Step", eyebrow:"06 · NEXT STEP", title:"Ready for the next", titleGradient:"challenge", lead:"I'm looking for a great product team where I can combine system analysis and product thinking. I'd be glad to work together on the product, generate ideas and see how features make users' lives better.", role:"Middle Product / System Analyst", remote:"Remote / Hybrid", teams:"Product teams", salary:"Salary expectations:", salaryValue:"from RUB 200,000 net", telegram:"Message me on Telegram", portfolio:"View online portfolio" }
       }
